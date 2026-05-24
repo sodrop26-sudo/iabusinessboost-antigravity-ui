@@ -1,0 +1,1 @@
+export const N8N_WEBHOOK_URL = "https://n8n.iabusinessboost.com/webhook-test/832db070-616d-4c10-852e-3d6d604396ed";
