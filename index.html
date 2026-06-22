@@ -1,34 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iabusinessboost-antigravity-ui</title>
+  <title>IA Business Boost - L'IA au service de votre performance</title>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <h1>IA Business Boost</h1>
-    <p class="subtitle">Inscription</p>
+  <!-- Header / Navigation bar -->
+  <header class="app-header">
+    <nav class="nav-container">
+      <a href="#/" class="logo-link">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">IA Business Boost</span>
+      </a>
+      
+      <!-- Hamburger Menu for mobile -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+        <span class="hamburger"></span>
+      </button>
 
-    <form id="form">
-      <label>Prénom</label>
-      <input id="prenom" type="text" placeholder="Sofian" required />
+      <!-- Navigation links -->
+      <div class="nav-links" id="nav-links">
+        <!-- Will be dynamically populated by JavaScript based on auth state -->
+      </div>
+    </nav>
+  </header>
 
-      <label>Nom</label>
-      <input id="nom" type="text" placeholder="Lagier" required />
+  <!-- Main view container -->
+  <main id="app">
+    <!-- Dynamic page content will be injected here -->
+    <div class="app-loader">
+      <div class="spinner"></div>
+      <p>Chargement de l'application...</p>
+    </div>
+  </main>
 
-      <label>Email</label>
-      <input id="email" type="email" placeholder="test@email.com" required />
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
 
-      <button id="submit" type="submit">Confirmer mon inscription</button>
-      <p id="status"></p>
-    </form>
-  </div>
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 IA Business Boost. Tous droits réservés.</p>
+      <p class="footer-links">
+        <a href="#/contact">Support & Contact</a> &bull; 
+        <a href="https://app.iabusinessboost.com" target="_blank" rel="noopener">Espace Client Pro</a>
+      </p>
+    </div>
+  </footer>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
